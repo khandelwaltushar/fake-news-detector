@@ -1,11 +1,17 @@
+
 ## Problem Statement
 Misinformation spreads rapidly through online news platforms and social media, influencing public opinion and decision-making.
 The goal of this project is to build an AI-powered system that analyzes news headlines or full articles and estimates the likelihood that the content is real or fake, along with a calibrated credibility score and an explanation of the model’s reasoning.
 
 
+## About This Project
+
+This system detects fake news using fine-tuned transformers, provides calibrated credibility scores with explanations, and is evaluated against strong baselines.
+
+
 ## Success Criteria
 
-Functional Success
+### Functional Success
 User can input a headline or article
 System returns:
 Fake / Real label
@@ -13,12 +19,12 @@ Credibility score (0–100)
 Explanation text
 Model confidence
 
-ML Success
+### ML Success
 Beats TF-IDF + Logistic Regression baseline
 Precision for FAKE class ≥ recall trade-off (We want fewer FPs as much as possible)
 Stable probabilities (calibrated)
 
-Engineering Success
+### Engineering Success
 Inference < 500 ms on CPU
 Reproducible training
 Modular codebase
